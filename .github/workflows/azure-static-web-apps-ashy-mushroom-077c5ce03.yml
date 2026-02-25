@@ -72,7 +72,6 @@ jobs:
         with:
           urls: |
             ${{ needs.build_and_deploy_job.outputs.deployed_url }}
-          configPath: ./.lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
 
